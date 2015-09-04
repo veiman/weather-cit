@@ -1,0 +1,14 @@
+<div>
+    <h3>
+        {{provider}}
+    </h3>
+    <hr/>
+    <tabset justified="true">
+        <tab ng-repeat="city in cities" heading="{{city.name}} ({{city.country}})" select="selectTab(city)">
+            <br/>
+            <div ui-i18n="ru">
+                <div id="grid2" ui-grid="gridOptions" class="grid" ui-grid-auto-resize></div>
+            </div>
+        </tab>
+    </tabset>
+</div>

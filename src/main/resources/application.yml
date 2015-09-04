@@ -1,0 +1,21 @@
+weather:
+  #  period: Периодичность запуска сбора погоды (в милисекундах)
+  period: 900000 # 15 мин
+  # Провайдеры сбора погоды
+  providers:
+    - OWMap
+    - Wunderground
+  # Города
+  cities:
+    -
+      name: Magnitogorsk
+      country: RU
+    -
+      name: Yekaterinburg
+      country: RU
+    -
+      name: Moscow
+      country: RU
+    -
+      name: Perm
+      country: RU

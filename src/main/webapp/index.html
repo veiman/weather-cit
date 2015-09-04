@@ -1,0 +1,63 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Weather Aggregator</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- build:css assets/styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/angular-ui-grid/ui-grid.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css assets/styles/main.css -->
+    <link rel="stylesheet" href="assets/styles/main.css">
+    <!-- endbuild -->
+</head>
+<body ng-app="weatherAggregator">
+<div ui-view="navbar" ng-cloak=""></div>
+<div class="container-fluid">
+    <div class="well" ui-view="content"></div>
+
+    <div class="footer">
+        <p translate="footer">Created by Veyman Alexander</p>
+    </div>
+</div>
+
+<!-- build:js scripts/vendor.js -->
+<!-- bower:js -->
+<script src="bower_components/modernizr/modernizr.js"></script>
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/json3/lib/json3.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+<script src="bower_components/angular-ui-grid/ui-grid.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="bower_components/angular-resource/angular-resource.js"></script>
+<script src="bower_components/angular-cookies/angular-cookies.js"></script>
+<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+<script src="bower_components/angular-dynamic-locale/src/tmhDynamicLocale.js"></script>
+<script src="bower_components/angular-local-storage/dist/angular-local-storage.js"></script>
+<script src="bower_components/angular-cache-buster/angular-cache-buster.js"></script>
+<script src="bower_components/ngInfiniteScroll/build/ng-infinite-scroll.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+<!---------------------->
+<!-- build:js({.tmp,src/main/webapp}) scripts/app.js -->
+<script src="scripts/app/app.js"></script>
+<script src="scripts/app/entity.js"></script>
+<script src="scripts/app/main/main.js"></script>
+<script src="scripts/app/provider/provider.controller.js"></script>
+<script src="scripts/app/weather/weather.controller.js"></script>
+<script src="scripts/app/weather/weather.js"></script>
+<script src="scripts/components/entities/city/city.service.js"></script>
+<script src="scripts/components/entities/provider/provider.service.js"></script>
+<script src="scripts/components/entities/weather/weather.service.js"></script>
+<script src="scripts/components/navbar/navbar.directive.js"></script>
+<script src="scripts/components/navbar/navbar.controller.js"></script>
+<!-- endbuild -->
+</body>
+</html>
