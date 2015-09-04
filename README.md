@@ -26,7 +26,7 @@
  * grunt - система сборки для JavaScript
  * bootstrap - фреймворк для разработки удобного польязовательского web интерфейса
  
- ## <a href="requirements">Требования</a> [&#8593;](#top)
+ ## <a name="requirements">Требования</a> [&#8593;](#top)
  
  Минимальные требования:
  - Java 8
@@ -34,12 +34,12 @@
  - NodeJS 0.12
  - npm
  
- ## <a href="package">Сборка</a> [&#8593;](#top)
+ ## <a name="package">Сборка</a> [&#8593;](#top)
  ```bash 
  mvn -P prod package
  ```
  
- ## <a href="setup">Настройка</a> [&#8593;](#top)
+ ## <a name="setup">Настройка</a> [&#8593;](#top)
  Для настройки необходимо редактировать файл src/main/java/resources/application.yml
  В этом файле есть 3 секции настроек:
  - **weather.period** - периодичность запуска сбора погоды (в милисекундах)
@@ -73,7 +73,7 @@
        country: RU
  ```
  
- ## <a href="run">Запуск</a> [&#8593;](#top)
+ ## <a name="run">Запуск</a> [&#8593;](#top)
  ```bash 
   java -jar target/weather-cit-0.1.jar
   ```
